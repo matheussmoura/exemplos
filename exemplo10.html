@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+input.ng-invalid {
+    background-color:pink;
+}
+input.ng-valid {
+    background-color:lightgreen;
+}
+</style>
+<body ng-app="">
+
+<p>Preencha o campo:</p>
+
+<form name="myForm">
+<input name="myName" ng-model="myName" required>
+</form>
+
+<script src="js/angular.min.js"></script>
+
+</body>
+</html>

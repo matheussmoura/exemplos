@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body ng-app="">
+
+<p>Preencha todos os campos...</p>
+
+<form name="myForm">
+<p>
+    <label>Nome:</label>
+    <input name="myName" ng-model="myName" required>
+    <span ng-show="myForm.myName.$touched && myForm.myName.$invalid">O nome é obrigatório.</span>
+</p>
+<p>
+    <label>Address:</label>
+    <input name="myAddress" ng-model="myAddress" required>
+</p>
+
+</form>
+
+<script src=js/angular.min.js></script>  
+</body>
+</html>

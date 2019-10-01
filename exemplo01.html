@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AngularJS - Exemplo 01</title>
+</head>
+<body>
+
+<div data-ng-app="" data-ng-init="nome='Joca'">
+
+    <p>Escreve seu nome:</p>
+    <p>Nome : <input type="text" data-ng-model="nome" placeholder="digite seu nome"></p>
+    <h1>Olá {{nome}}!</h1>
+    <h1 data-ng-bind="nome">Olá </h1>
+
+</div>
+
+<script src="js/angular.min.js"></script>
+</body>
+</html>
